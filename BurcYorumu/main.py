@@ -35,15 +35,22 @@ def button_selected(buttonName):
         yillik_button.config(bg="Light Green")
         mode = "yillik"
 
+def yorumu_duzelt(yorum):
+    if "..." in yorum:
+        normal_yorum = yorum.index("...")
+        return yorum[normal_yorum + 3:]
+    else:
+        return yorum
+        
 def yorumu_goruntule(yorum, burc):
     global mode
     secondary_window = tk.Toplevel()
     secondary_window.title(f"{burc}")
     secondary_window.config(bg="White")
     if mode == "aylik" or mode == "yillik":
-        yorumLabel = tk.Label(secondary_window, text=f"{yorum}",wraplength=1250,bg="White")
+        yorumLabel = tk.Label(secondary_window, text=f"{yorumu_duzelt(yorum)}",wraplength=1250,bg="White")
     else:
-        yorumLabel = tk.Label(secondary_window, text=f"{yorum}",wraplength=600,bg="White")
+        yorumLabel = tk.Label(secondary_window, text=f"{yorumu_duzelt(yorum)}",wraplength=600,bg="White")
     yorumLabel.grid(row=0, column=0, padx=10, pady=10)
     button_close = tk.Button(secondary_window,font=FONT,text="KAPAT", command=secondary_window.destroy,cursor="hand2",bg="Orange",width=10)
     button_close.grid(row=1, column=0, pady=10)
