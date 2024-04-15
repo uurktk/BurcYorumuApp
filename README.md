@@ -5,8 +5,8 @@ Bu uygulama, kullanıcıların seçtikleri burçlara göre günlük, haftalık, 
 ## Kullanım
 
 1. Programı çalıştırın.
-2. İlgilendiğiniz burca tıklayın.
-3. Günlük, haftalık, aylık veya yıllık butonlarından birini seçin.
+2. Günlük, haftalık, aylık veya yıllık butonlarından birini seçin.
+3. İlgilendiğiniz burca tıklayın.
 4. Seçtiğiniz yoruma göz atın.
 
 ## Gereksinimler
