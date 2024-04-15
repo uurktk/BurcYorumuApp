@@ -1,6 +1,6 @@
 # Burç Yorumu App
 
-Bu uygulama, kullanıcıların seçtikleri burçlara göre günlük, haftalık, aylık veya yıllık burç yorumlarını görüntülemeler.
+Bu uygulama, kullanıcıların seçtikleri burçlara göre günlük, haftalık, aylık veya yıllık burç yorumlarını gösterir.
 
 ## Kullanım
 
